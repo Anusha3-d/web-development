@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kadamba — South Indian Filter Coffee &amp; Tiffins, Bengaluru</title>
+<meta name="description" content="Kadamba is a modern South Indian tiffin house in Bengaluru serving filter coffee, dosas, and home-style breakfast all day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Primary">
+    <a href="#top" class="brand">Kadamba</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="primaryNav">
+      <li><a href="#menu" class="nav-link">Menu</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+      <li><a href="#contact" class="nav-link">Visit</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Bengaluru · Since 6 AM daily</p>
+      <h1 class="hero-title">Filter coffee first.<br>Everything else follows.</h1>
+      <p class="hero-sub">A tiffin house built around one steel tumbler of coffee — dosas, idlis, and chutneys made the way they've always been made, served all day.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">See the menu</a>
+        <a href="#contact" class="btn btn-ghost">Find us</a>
+      </div>
+    </div>
+    <div class="hero-steam" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="section-head">
+      <p class="eyebrow">01 · The Menu</p>
+      <h2>Tiffins &amp; filter coffee, all day</h2>
+    </div>
+
+    <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+      <button class="menu-tab is-active" role="tab" aria-selected="true" data-category="tiffins">Tiffins</button>
+      <button class="menu-tab" role="tab" aria-selected="false" data-category="coffee">Coffee &amp; Beverages</button>
+      <button class="menu-tab" role="tab" aria-selected="false" data-category="sides">Chutneys &amp; Sides</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- populated by script.js -->
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow">02 · Inside Kadamba</p>
+      <h2>From the tawa to the table</h2>
+    </div>
+    <div class="gallery-grid">
+      <figure class="gallery-item gallery-item--wide">
+        <img src="https://images.unsplash.com/photo-1630383249896-483262f30f37?w=800&q=70" alt="Crisp masala dosa served with sambar and chutneys" loading="lazy">
+        <figcaption>Masala dosa, made to order</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1610192244261-3f33de3f72e1?w=600&q=70" alt="Filter coffee being poured between two steel tumblers" loading="lazy">
+        <figcaption>The morning ritual</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&q=70" alt="Soft idlis with coconut chutney and podi" loading="lazy">
+        <figcaption>Steamed idlis, coconut chutney</figcaption>
+      </figure>
+      <figure class="gallery-item gallery-item--wide">
+        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800&q=70" alt="Banana leaf breakfast spread with multiple South Indian dishes" loading="lazy">
+        <figcaption>Weekend banana-leaf spread</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="section-head">
+      <p class="eyebrow">03 · Regulars Say</p>
+      <h2>Word from the tumbler</h2>
+    </div>
+    <div class="testimonial-carousel">
+      <button class="t-arrow t-prev" aria-label="Previous review">&#8592;</button>
+      <div class="t-viewport">
+        <ul class="t-track" id="testimonialTrack">
+          <li class="t-slide">
+            <p class="t-quote">The coffee-to-milk ratio here is the closest I've found to my grandmother's kitchen in Mysore.</p>
+            <p class="t-author">— Deepa R.</p>
+          </li>
+          <li class="t-slide">
+            <p class="t-quote">Their podi is dangerous. I've bought three jars to take home in one month.</p>
+            <p class="t-author">— Karthik N.</p>
+          </li>
+          <li class="t-slide">
+            <p class="t-quote">Quiet on weekday mornings, and the dosa is always crisp at the edges. My regular breakfast spot now.</p>
+            <p class="t-author">— Meera S.</p>
+          </li>
+        </ul>
+      </div>
+      <button class="t-arrow t-next" aria-label="Next review">&#8594;</button>
+    </div>
+    <div class="t-dots" id="testimonialDots"></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-head">
+      <p class="eyebrow">04 · Visit Us</p>
+      <h2>Come by, or send a word ahead</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Kadamba Tiffin House</h3>
+        <p>4th Cross, Malleswaram<br>Bengaluru, Karnataka 560003</p>
+        <p><strong>Hours</strong><br>Mon–Sat, 6:00 AM – 8:30 PM<br>Sunday, 7:00 AM – 1:00 PM</p>
+        <p><strong>Phone</strong><br>+91 80 4567 1234</p>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required minlength="2">
+          <span class="form-error" id="nameError" role="alert"></span>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="form-error" id="emailError" role="alert"></span>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+          <span class="form-error" id="messageError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Kadamba Tiffin House. A portfolio project by Anusha Chowdary Daruri.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
